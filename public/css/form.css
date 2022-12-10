@@ -1,0 +1,20 @@
+.formEdit {
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 3pt;
+    padding: 10pt;
+    background-color: rgb(250, 250, 250);
+}
+.formEdit form {
+    padding: 0pt;
+    margin: 0pt;
+}
+.formEdit form button[type="submit"] {
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    margin: 10pt 0pt;
+}
+.formEdit input {
+    margin: 5pt 10pt;
+    width: calc(100% - 20pt);
+}

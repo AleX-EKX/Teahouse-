@@ -1,0 +1,47 @@
+footer {
+    width: 100%;
+    /* max-width: 950px; */
+    margin: 0 auto;
+    margin-top: auto;
+
+    height: 50px;
+    padding-bottom: 20px;
+
+    /* padding-top: 10px; */
+}
+footer * {
+
+}
+footer .container {
+    padding-right: 20px;
+    padding-left: 20px;
+    display: block;
+}
+footer .container table {
+    width: 100%;
+}
+footer .container .fonerius {
+    float: right;
+}
+footer .container .fonerius > a {
+    color: #838383;
+}
+footer .container .fonerius > a {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-decoration: none;
+    background-color: #EEEEEE;
+    transition: .3s ease;
+    cursor: default;
+}
+footer .container .fonerius > a:hover {
+    color: #ffee00;
+    background-color: #808080;
+}
+footer .container .workStatus > p:nth-child(1n) {
+    font-size: 16px;
+}
+footer .container .workStatus > p:nth-child(2n) {
+    font-size: 14px;
+}

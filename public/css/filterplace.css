@@ -1,0 +1,26 @@
+filterplace {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20pt;
+    background-color: #e6e6e6;
+    padding: 10pt;
+}
+filterplace > fpcell {
+    flex-basis: calc(25% - 5pt);
+    padding-right: 5pt;
+    padding-bottom: 5pt;
+    height: 40pt;
+}
+filterplace > fpcell > input {
+}
+filterplace > fpsubmit {
+    padding-top: 10pt;
+    flex-basis: 100%;
+}
+fpsubmit > button {
+    float: right;
+}

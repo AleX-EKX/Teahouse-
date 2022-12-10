@@ -1,0 +1,270 @@
+@font-face {
+    font-family: ubuntu;
+    src: local('Ubuntu'),
+        url("{{ asset('/fonts/ubuntu/ubuntu.ttf') }}") format("truetype"),
+        url("{{ asset('fonts/ubuntu/ubuntu.woff2') }}") format('woff2'),
+        url("{{ asset('fonts/ubuntu/ubuntu.woff') }}") format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+p {
+    font-family: ubuntu;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.header {
+    height: 48pt;
+    width: 100%;
+    background-color: #FFA500;
+    color: white;
+    position: relative;
+    border-bottom: 1px solid #d18800;
+    z-index: 9999;
+}
+.header * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 12pt;
+}
+.header img {
+    position: absolute;
+    width: 20pt;
+    height: 20pt;
+}
+.header p {
+    font-size: 16pt;
+    margin-left: 44pt;
+}
+
+.content {
+    overflow: hidden;
+    /* overflow: scroll; */
+    height: 100%;
+}
+.content::-webkit-scrollbar { width: 0; }
+
+#menu {
+    position: absolute;
+    top: 48.6pt;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 48.6pt);
+    background-color: #ffb42a;
+    z-index: 1000;
+    border-right: 1px solid #e69500;
+    overflow-y: scroll;
+}
+#menu::-webkit-scrollbar { width: 0; }
+#menu a {
+    line-height: 40pt;
+    text-decoration: none;
+}
+#menu a li {
+    padding-left: 10pt;
+    list-style-type: none;
+    border-bottom: 1px solid #eb9e0f;
+    color: white;
+}
+#menu a li:active {
+    background-color: #ad7815;
+}
+@font-face {
+    font-family: ubuntu;
+    src: local('Ubuntu'),
+        url("{{ asset('/fonts/ubuntu/ubuntu.ttf') }}") format("truetype"),
+        url("{{ asset('fonts/ubuntu/ubuntu.woff2') }}") format('woff2'),
+        url("{{ asset('fonts/ubuntu/ubuntu.woff') }}") format('woff');
+    font-style: normal;
+    font-weight: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ubuntu;
+
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+}
+p {
+    font-family: ubuntu;
+}
+body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+.header {
+    height: 48pt;
+    width: 100%;
+    background-color: #FFA500;
+    color: white;
+    position: relative;
+    border-bottom: 1px solid #d18800;
+    z-index: 9999;
+}
+.header * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 12pt;
+}
+.header img {
+    position: absolute;
+    width: 20pt;
+    height: 20pt;
+}
+.header p {
+    font-size: 20pt;
+    margin-left: 44pt;
+}
+
+.content {
+    overflow-y: scroll;
+    height: 100%;
+}
+.content::-webkit-scrollbar { width: 0; }
+
+#menu {
+    position: absolute;
+    top: 48.6pt;
+    left: -100%;
+    width: 100%;
+    height: calc(100% - 48.6pt);
+    background-color: #ffb42a;
+    z-index: 1000;
+    border-right: 1px solid #e69500;
+    overflow-y: scroll;
+}
+#menu::-webkit-scrollbar { width: 0; }
+#menu a {
+    line-height: 40pt;
+    text-decoration: none;
+}
+#menu a li {
+    font-size: 16pt;
+    padding-left: 10pt;
+    list-style-type: none;
+    border-bottom: 1px solid #eb9e0f;
+    color: white;
+}
+#menu a li:active {
+    background-color: #ad7815;
+}
+
+.btnOrange {
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 9pt 15pt;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    background-color: #FFA500;
+    transition: background-color 100ms linear;
+
+    margin: 1pt;
+}
+.btnOrange:active {
+    background-color: #AD310B;
+    transition: background-color 50ms linear;
+}
+.btnTrans {
+    font-weight: bold;
+    border: 1.5pt solid #FFA500;
+    border-radius: 5px;
+    color: #FFA500;
+    padding: 10px 20pt;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+    background-color: rgb(250, 250, 250);
+    transition: background-color 100ms linear;
+
+    margin: 1pt;
+}
+.btnTrans:active {
+    background-color: rgb(238, 238, 238);
+    border: 1.5pt solid #FFA500;
+    color: #FFA500;
+    transition: background-color 50ms linear;
+}
+.btnTrans:disabled,
+.btnTrans[disabled]{
+  opacity: 0.5;
+  background-color: rgb(226, 226, 226);
+}
+
+.input, .select {
+    background-color: white;
+    font-size: 18px;
+    width: 100%;
+    padding: 6px 6px;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.input:focus, .select:focus {
+    border: 3px solid #555;
+}
+textarea.input {
+    width: calc(100% - 20pt);
+    margin: 10pt;
+    height: 150px;
+}
+
+form {
+    padding: 10pt 10pt;
+    margin-bottom: calc(50pt + 10px);
+}
+
+form p {
+    color: #999;
+    margin-top: 10pt;
+    margin-bottom: 6pt;
+}
+
+hr {
+    margin-top: 15pt;
+    margin-bottom: 15pt;
+}
+
+.content-sub {
+    padding: 10pt 10pt;
+    margin-bottom: calc(50pt + 10px);
+}
+
+.msgs-card {
+    max-width: 100%;
+    padding: 5pt;
+    border-radius: 5pt;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(212, 212, 212);
+    margin-top: 5pt;
+    margin-bottom: 5pt;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}

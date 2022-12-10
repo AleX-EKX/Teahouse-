@@ -1,0 +1,49 @@
+context-menu {
+    position: relative;
+}
+context-menu > img {
+    height: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+context-menu > img:hover {
+    opacity: 1.0;
+}
+
+context-menu > .context-list-inside form {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 160px;
+}
+context-menu > .context-list-inside {
+    position: absolute;
+    margin-left: 20px;
+    display: none;
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgb(179, 179, 179);
+    border-radius: 3px;
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+context-menu > .context-list-inside a, context-menu > .context-list-inside button {
+    background:none;
+    border:none;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+
+    cursor: pointer;
+    display: table;
+    padding: 5pt;
+    width: calc(100% - 10pt);
+    white-space: nowrap;
+    text-decoration: none;
+    color: black;
+}
+context-menu > .context-list-inside a:hover, context-menu > .context-list-inside button:hover {
+    color: #FFA500;
+}
+context-menu > .context-list-inside a:not(:last-child), context-menu > .context-list-inside button:not(:last-child) {
+    border-bottom: 1px solid rgb(179, 179, 179);
+}

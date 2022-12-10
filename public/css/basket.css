@@ -1,0 +1,42 @@
+.basket-row {
+    border: 1pt solid black;
+    border-radius: 3pt;
+    padding: 3pt;
+    margin-bottom: 5pt;
+    width: 100%;
+    background-color: white;
+}
+
+.basket-row .first-row {
+
+}
+.basket-row .first-row .first-column {
+    font-size: 14pt;
+    color: black;
+}
+.basket-row .first-row .second-column {
+    text-align: right;
+    color: rgb(70, 70, 70);
+}
+.basket-row .second-row {
+
+}
+.basket-row .second-row .first-column {
+    font-size: 10pt;
+    color: rgb(70, 70, 70);
+}
+.basket-row .second-row .second-column {
+    font-size: 10pt;
+    text-align: right;
+    color: rgb(70, 70, 70);
+}
+
+.basket-msg {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: rgb(100, 100, 100);
+    transform: translate(-50%, -200%);
+    font-style: italic;
+}
